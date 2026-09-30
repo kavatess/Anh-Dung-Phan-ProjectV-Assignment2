@@ -20,7 +20,6 @@ int main() {
     }
 
     std::string line;
-    // Each line in StudentData.txt is formatted as: LastName, FirstName
     while (std::getline(inputFile, line)) {
         if (line.empty()) {
             continue;
@@ -45,6 +44,13 @@ int main() {
     }
 
     inputFile.close();
+
+    // Print student information only if compiled in debug mode
+#if defined(_DEBUG) || !defined(NDEBUG)
+    for (const auto& student : students) {
+        std::cout << student.firstName << " " << student.lastName << std::endl;
+    }
+#endif
 
     return 0;
 }
