@@ -76,7 +76,7 @@ int main() {
     inputFile.close();
 
     // Print student details only when compiled in Debug mode
-#if defined(_DEBUG) || defined(PRE_RELEASE)
+#if defined(_DEBUG)
     for (const auto& student : students) {
         std::cout << student.firstName << " " << student.lastName;
 #ifdef PRE_RELEASE
