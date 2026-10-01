@@ -1,7 +1,10 @@
 <Solution>
   <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="PreRelease" />
+    <BuildType Name="Release" />
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Anh-Dung-Phan-ProjectV-Assignment2.vcxproj" />
+  <Project Path="Anh-Dung-Phan-ProjectV-Assignment2.vcxproj" Id="277701fd-dbe3-4c0c-846c-a0e0a0006646" />
 </Solution>
